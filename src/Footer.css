@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{ 
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: italic;
+  
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px;
+  background-color: #4f4cee;
+  color: black;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo-img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.mission-text,
+.contact-info,
+.rights-text {
+  font-size: 14px;
+}
+
+.footer-line {
+  margin: 20px 0;
+  border-top: 1px solid #fff;
+}
+
+.quick-links {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links li {
+  margin-bottom: 10px;
+}
+
+.quick-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.quick-links a:hover {
+  color: #3498db;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  font-size: 30px;
+  color: black;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: white;
+}
+
+   
+  
+  

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    background-color: rgb(80, 80, 144);
+    color: white;
+    padding: 20px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .text-section {
+    width: 50%;
+    padding-right: 20px;
+  }
+  
+  .about-us-text {
+    font-size: 30px;
+    font-weight: bold;
+    animation: slideDown 1s ease-out;
+  }
+  
+  .who-we-are {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    animation: slideDown 1.5s ease-out;
+  }
+  
+  .spotlight-info {
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 1.6;
+    animation: slideDown 2s ease-out;
+  }
+  
+  .image-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    animation: slideUp 2s ease-out;
+  }
+  
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
