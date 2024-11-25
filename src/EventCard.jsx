@@ -9,7 +9,7 @@ import adele from './assets/adele.jpg';
 import frank from './assets/frank.jpg';
 import crank from './assets/crank.jpg';
 import kenye from './assets/kenye.jpg';
-
+import './EventCard.css';
 // Card data array (renamed to EventCard for consistency)
 export const EventCardData = [
   { id: 1, image: frank, title: 'Card Title 1', description: 'This is a description of the card. It provides some details about the content inside.' },

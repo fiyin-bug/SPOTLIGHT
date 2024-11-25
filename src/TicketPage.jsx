@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import frank from './assets/frank.jpg';
 import { useNavigate } from 'react-router-dom';
-
+import './TicketPage.css';
 const TicketPage = () => {
   // Get the event id from the URL params
   const { id } = useParams();

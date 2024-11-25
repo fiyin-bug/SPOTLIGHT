@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import spot from './assets/spot.png';
+import './Navbar.css';
 
 function Navbar() {
-  const navigate = useNavigate(); // Hook to navigate between pages
+  const navigate = useNavigate();
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Function to handle button click
   const handleCreateEvent = () => {
-    navigate('/loading'); // Navigate to the loading page
+    navigate('/loading');
+  };
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
@@ -17,7 +22,11 @@ function Navbar() {
         <img src={spot} alt="Logo" className="nav-logo" />
       </div>
 
-      <ul className="navbar-links">
+      <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
+        &#9776; {/* Hamburger Menu Icon */}
+      </div>
+
+      <ul className={`navbar-links ${isMobileMenuOpen ? 'active' : ''}`}>
         <li><Link to="/landing">Home</Link></li>
         <li><Link to="/discover">Discover</Link></li>
         <li><Link to="/about">About</Link></li>
@@ -25,7 +34,6 @@ function Navbar() {
         <li><Link to="/gallery">Gallery</Link></li>
       </ul>
 
-      {/* Create Event button */}
       <button className="event-button" onClick={handleCreateEvent}>
         Create Event
       </button>
@@ -34,4 +42,3 @@ function Navbar() {
 }
 
 export default Navbar;
-

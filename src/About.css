@@ -73,4 +73,55 @@
       opacity: 1;
     }
   }
-  
+  /* Tablets and smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center-align content */
+  }
+
+  .text-section,
+  .image-section {
+    width: 100%; /* Full-width for stacked layout */
+    padding-right: 0;
+    margin-bottom: 20px; /* Add spacing between sections */
+  }
+
+  .about-us-text {
+    font-size: 6px; /* Adjust font size for smaller screens */
+    
+  }
+
+  .who-we-are {
+    font-size: 10px;
+  }
+
+  .spotlight-info {
+    font-size: 10px;
+    margin-left: -22px;
+  }
+
+  .image {
+    max-width: 300px; /* Reduce image size */
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .about-us-text {
+    font-size: 15px;
+  }
+
+  .who-we-are {
+    font-size: 18px;
+  }
+
+  .spotlight-info {
+    font-size: 7px;
+    line-height: 3.8; /* Tighten spacing for smaller screens */
+  }
+
+  .image {
+    max-width: 250px; /* Further reduce image size */
+  }
+}

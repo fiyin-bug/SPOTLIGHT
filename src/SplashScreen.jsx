@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import spot from './assets/spot.png';
-
+import './SplashScreen.css'
 function SplashScreen() {
   const navigate = useNavigate();
 
@@ -11,7 +11,7 @@ function SplashScreen() {
     const timer = setTimeout(() => {
       console.log('Navigating to /landing');
       navigate('/landing');
-    }, 5000);
+    }, 10000);
 
     return () => {
       console.log('Cleaning up timer');

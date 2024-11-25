@@ -1,0 +1,134 @@
+
+
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Create a responsive grid layout */
+    gap: 20px; /* Add space between cards */
+    padding: 40px;
+    
+  }
+  
+  .card {
+    border: 1px solid #ccc; /* Example styling */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a cleaner look */
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Hover effect for the card */
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .card-description {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  
+  .card-title, .card-description {
+    text-decoration: none; /* Remove any underlining */
+  }
+  
+  .ticket-page {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .get-ticket-btn {
+    position: relative;
+    display: block;
+  
+    padding: 10px 40px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  
+  .get-ticket-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .ticket-info {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .ticket-image img {
+    width: 350px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .event-details {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  
+  .event-title {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .event-icon {
+    margin-right: 10px;
+  }
+  
+  .event-date-time,
+  .event-time,
+  .event-location {
+    margin-top: 10px;
+  }
+  
+  .divider {
+    border: 0;
+    border-top: 1px solid #f0f1f1;
+    margin: 20px 0;
+  }
+  
+  .event-description h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .event-description p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .directions {
+    margin-top: 20px;
+  }
+  
+  .directions iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    border-radius: 10px;
+  }

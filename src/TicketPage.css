@@ -1,0 +1,141 @@
+.ticket-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .ticket-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin-bottom: 20px;
+  }
+  
+  .ticket-image img {
+    width: 100%;
+    max-width: 400px; /* Restrict max width */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .get-ticket-btn {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .get-ticket-btn:hover {
+    background-color: #e64a19;
+  }
+  
+  .event-details {
+    flex: 1; /* Let details take up remaining space */
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+  
+  .event-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .event-date-time,
+  .event-time,
+  .event-location {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  .event-description,
+  .directions {
+    margin-bottom: 20px;
+  }
+  
+  .map-container iframe {
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  /* Tablets and smaller screens */
+  @media (max-width: 768px) {
+    .ticket-info {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center-align content */
+    }
+  
+    .event-details {
+      padding-left: 0;
+      text-align: center; /* Center-align text for a cleaner look */
+    }
+  
+    .ticket-image img {
+      max-width: 300px; /* Reduce image size for smaller screens */
+    }
+  
+    .get-ticket-btn {
+      max-width: 200px;
+    }
+  
+    .event-title {
+      font-size: 20px;
+    }
+  
+    .event-date-time,
+    .event-time,
+    .event-location {
+      font-size: 14px;
+    }
+  }
+  
+  /* Mobile phones */
+  @media (max-width: 480px) {
+    .ticket-info {
+      flex-direction: column;
+    }
+  
+    .ticket-image img {
+      max-width: 100%;
+    }
+  
+    .event-title {
+      font-size: 18px;
+    }
+  
+    .event-date-time,
+    .event-time,
+    .event-location {
+      font-size: 12px;
+    }
+  
+    .get-ticket-btn {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    .map-container iframe {
+      height: 250px; /* Reduce map height for smaller screens */
+    }
+  }
+  

@@ -1,17 +1,21 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom';
 import hall from './assets/hall.jpg';
 import frank from './assets/frank.jpg';
 import crank from './assets/crank.jpg';
 import kenye from './assets/kenye.jpg';
+import './LandingPage.css';
+
 
 function LandingPage() {
   const navigate = useNavigate(); // Hook to navigate between pages
 
-  // Function to handle button click
-  const handleCreateEvent = () => {
-    navigate('/loading'); // Navigate to the loading page
+  // Function to handle navigation to TicketPage
+  const handleNavigate = (cardId) => {
+    navigate(`/CheckoutPage/${cardId}`); // Navigate to CheckoutPage with a dynamic ID
   };
+
+  
 
   return (
     <>
@@ -27,7 +31,7 @@ function LandingPage() {
       {/* Card Container */}
       <div className="card-container">
         {/* Card 1 */}
-        <div className="card-1">
+        <div className="card-1" onClick={() => handleNavigate('card1')}>
           <img src={frank} alt="Card Image" className="card-img" />
           <div className="card-body">
             <h3 className="card-title">Card Title 1</h3>
@@ -38,7 +42,7 @@ function LandingPage() {
         </div>
 
         {/* Card 2 */}
-        <div className="card-2">
+        <div className="card-2" onClick={() => handleNavigate('card2')}>
           <img src={kenye} alt="Card Image" className="card-img" />
           <div className="card-body">
             <h3 className="card-title">Card Title 2</h3>
@@ -49,7 +53,7 @@ function LandingPage() {
         </div>
 
         {/* Card 3 */}
-        <div className="card-3">
+        <div className="card-3" onClick={() => handleNavigate('card3')}>
           <img src={crank} alt="Card Image" className="card-img" />
           <div className="card-body">
             <h3 className="card-title">Card Title 3</h3>
@@ -58,6 +62,8 @@ function LandingPage() {
             </p>
           </div>
         </div>
+
+        <h5 className=""></h5>
       </div>
 
       
@@ -66,3 +72,4 @@ function LandingPage() {
 }
 
 export default LandingPage;
+
