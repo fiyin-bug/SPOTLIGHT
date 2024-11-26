@@ -11,7 +11,7 @@ function SplashScreen() {
     const timer = setTimeout(() => {
       console.log('Navigating to /landing');
       navigate('/landing');
-    }, 10000);
+    }, 5000);
 
     return () => {
       console.log('Cleaning up timer');

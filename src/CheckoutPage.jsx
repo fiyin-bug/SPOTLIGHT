@@ -73,9 +73,9 @@ function CheckoutPage() {
               <p>₦10,000</p>
               &nbsp;
               <div className="counter">
-                <button onClick={() => setEarlyBirdCount((count) => Math.max(0, count - 1))}>-</button>
+                <button className="decrementor"onClick={() => setEarlyBirdCount((count) => Math.max(0, count - 1))}>-</button>
                 <span>{earlyBirdCount}</span>
-                <button onClick={() => setEarlyBirdCount((count) => count + 1)}>+</button>
+                <button className="incrementor"onClick={() => setEarlyBirdCount((count) => count + 1)}>+</button>
               </div>
             </div>
             <div className="divider"></div>
@@ -85,9 +85,9 @@ function CheckoutPage() {
               <p>₦15,000</p>
               &nbsp;
               <div className="counter">
-                <button onClick={() => setRegularCount((count) => Math.max(0, count - 1))}>-</button>
+                <button className="decrementor2"onClick={() => setRegularCount((count) => Math.max(0, count - 1))}>-</button>
                 <span>{regularCount}</span>
-                <button onClick={() => setRegularCount((count) => count + 1)}>+</button>
+                <button className="incrementor2"onClick={() => setRegularCount((count) => count + 1)}>+</button>
               </div>
             </div>
             &nbsp;
@@ -127,7 +127,7 @@ function CheckoutPage() {
                 <input type="checkbox" id="send-to-email" />
                 <label htmlFor="send-to-email">Send tickets to my email address</label>
               </div>
-              <button className="continue-btn" onClick={(e) => {
+              <button className="proceed-btn" onClick={(e) => {
                 e.preventDefault();
                 handleContinue();
               }}>

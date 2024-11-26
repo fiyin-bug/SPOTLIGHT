@@ -83,7 +83,13 @@ body {
   .counter {
     display: flex;
     align-items: center;
+    
   }
+  .incrementor {
+    z-index: 100; /* Make sure it’s on top */
+    margin-right: 300px;
+  }
+  
   
   .counter button {
     background: #007bff;
@@ -122,9 +128,35 @@ body {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 1rem;
+    
   }
-  
+  .continue-btn{
+    margin-left: 140px !important;
+
+  }
+  .pay-btn{
+    background-color: #007bff;
+    color: white;
+    padding: 4px 4px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 233px;
+  }
+  .proceed-btn{
+    background-color: #007bff;
+    color: white;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 460px;
+    margin-left: -33px;
+  }
   .back-btn:hover,
   .continue-btn:hover {
     background-color: #0056b3;
@@ -137,6 +169,7 @@ body {
   
   .back-btn:hover {
     background-color: #5a6268;
+    margin-bottom: 245px ;
   }
   
   /* Form */
@@ -211,6 +244,59 @@ body {
     border-radius: 4px;
     font-size: 1rem;
   }
+  .incrementor{
+    padding: 3px 4px !important;
+  font-size: 1.2rem;
+  background-color: #007bff; /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: -181px;
+  margin-left: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+.incrementor2{
+padding: 3px 4px !important;
+font-size: 1.2rem;
+background-color: #007bff; /* Blue background */
+color: white;
+border: none;
+border-radius: 5px;
+margin-top: -120px;
+margin-left: 30px;
+cursor: pointer;
+transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+.decrementor{
+  padding: 3px 4px ;
+  font-size: 1.2rem;
+  background-color: #007bff; /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: -180px;
+  margin-left: -25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  
+}
+
+.decrementor2{
+  padding: 3px 4px ;
+  font-size: 1.2rem;
+  background-color: #007bff; /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: -120px;
+  margin-left: -30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  
+}
+
+  
   
   /* Responsive Design */
   @media (max-width: 768px) {
@@ -222,7 +308,43 @@ body {
     .right-section {
       width: 100%;
     }
-  }
+    .incrementor{
+      
+      margin-left: -133px;
+      margin-top: -65px;
+     
+    }
+    .incrementor2{
+      margin-top:-4px ;
+      margin-left: -142px;
+    }
+    .decrementor{
+      margin-left: -20px;
+      margin-top: -65px;
+    }
+    .decrementor2{
+      margin-top:-4px ;
+      margin-left: -19px;
+    }
+    .continue-btn,.back-btn{
+      margin-top: 70px;
+    }
+     .proceed-btn{
+      z-index: 1;
+      position: absolute;
+      margin-top: 971px;
+     }
+      .pay-btn{
+        z-index: 1;
+        position: absolute;
+        margin-top: 715px;
+      }
+
+
+    }
+    
+    
+  
   
 
 
